@@ -1,0 +1,319 @@
+﻿
+@font-face {
+    font-family: "NeoSansStd";
+    src: url(../css/font/neosansstd-regular-webfont.ttf) format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    font-family: NeoSansStd;
+}
+
+.background {
+    display: block;
+    background: url(../img/background.png) no-repeat;
+    height: 700px;
+    width: 1300px;
+    -webkit-perspective: 500px;
+    -webkit-perspective-origin: 50% 0%;
+    perspective: 500px;
+}
+
+
+
+.panel {
+    width: 129px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    font-size: 13px;    
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+
+.panel_selected {
+    text-align: center;
+    display: block;
+    width: 129px;
+    height: 16px;
+    color: #1f5a73;
+    background: #042330;
+    cursor: default;
+}
+
+
+#running_news {
+    top: 15px;
+    left: 909px;
+    font-size: 13px;
+    width: 300px;
+}
+
+
+#pnl_info {
+    top: 44px;
+    left: 892px;
+}
+
+#pnl_roads {
+    top: 44px;
+    left: 1024px;
+}
+
+#pnl_winpool {
+    top: 44px;
+    left: 1156px;
+}
+
+
+.txt_white {
+    position: absolute;
+    font-size: 10px;
+    width: 133px;
+    display: block;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: white;
+}
+
+#txt_servername {
+    font-size: 20px;
+    top: 8px;
+    left: 11px;
+    width: 30px;
+    text-align: left;
+}
+
+#txt_currentdatetime {
+    font-size: 12px;
+    top: 15px;
+    left: 219px;
+    width: 240px;
+    text-align: left;
+}
+
+
+#txt_tablelimit {
+    width: 400px;
+    color: #00a6da;
+    font-size: 15px;
+    top: 42.5px;
+    left: 12px;
+}
+
+
+#txt_username {
+    color: #ffcc00;
+    top: 220px;
+    left: 917px;
+    text-align: left;
+}
+
+#txt_betlimit {
+    color: #ffcc00;
+    top: 220px;
+    left: 1072px;
+    text-align: left;
+}
+
+#txt_18-25 {
+    color: #ffcc00;
+    top: 220px;
+    left: 1238px;
+    text-align: left;
+    width: 50px;
+}
+
+#txt_pending {
+    top: 259px;
+    left: 1190px;
+    width: 100px;
+}
+
+#txt_confirmed {
+    top: 259px;
+    left: 1020px;
+}
+
+#txt_totalwin {
+    top: 259px;
+    left: 860px;
+}
+
+
+#txt_dragonresult {
+    position: absolute;
+    font-size: 43px;
+    width: 60px;
+    text-shadow: 0px 1px 4px #000;
+    text-align: center;
+    display: block;
+    top: 286px;
+    left: 350px;
+    color: #d32f2f;
+}
+
+#txt_tigerresult {
+    position: absolute;
+    font-size: 43px;
+    width: 60px;
+    text-shadow: 0px 1px 4px #000;
+    text-align: center;
+    display: block;
+    top: 286px;
+    left: 891px;
+    color: #00a6da;
+}
+
+#txt_countdown {
+    position: absolute;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    display: block;
+    top: 379px;
+    left: 1179px;
+    color: white;
+}
+
+#btn_setting {
+    position: absolute;
+    left: 9px;
+    bottom: 5px;
+    cursor: pointer;
+    background: url(../img/setting.png);
+    display: block;
+    height: 32px;
+    width: 32px;
+}
+
+#pnl_setting {
+    position: absolute;
+    left: 9px;
+    bottom: 39px;
+    background: url(../img/settingpanel.png);
+    display: block;
+    height: 201px;
+    width: 32px;
+    display: none;
+}
+
+#btn_viewsize_add {
+    display: block;
+    width: 32px;
+    height: 27px;
+    cursor: pointer;
+    background: #26231e;
+    position: absolute;
+    left: 45px;
+    bottom: 5px;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+
+#btn_viewsize_minus {
+    display: block;
+    width: 32px;
+    height: 27px;
+    cursor: pointer;
+    background: #26231e;
+    position: absolute;
+    left: 81px;
+    bottom: 5px;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+
+#btn_system {
+    background: url(../img/system.png);
+    display:block;
+    height:32px;
+    width:32px;
+    position: absolute;
+    left: 116px;
+    bottom: 5px;
+    cursor: pointer;
+}
+
+
+#pnl_balance {
+    background: url(../img/balance.png);
+    display: block;
+    width: 180px;
+    height: 32px;
+    position: absolute;
+    left: 151px;
+    bottom: 5px;
+}
+
+#btn_chkbalance{
+    display:block;
+    float:right;
+    height:100%;
+    width:32px;
+    cursor:pointer;
+}
+
+#txt_balance {
+    width: 90px;
+    bottom: 8px;
+    left: 59px;
+    font-size: 13px;
+    text-align: left;
+}
+
+#btn_write {
+    background: url(../img/write.png);
+    display: block;
+    width: 98px;
+    height: 45px;
+    position: absolute;
+    left: 427px;
+    bottom: 5px;
+    cursor: pointer;
+}
+
+.btn_2 {
+    display: block;
+    height: 45px;
+    position: absolute;
+    cursor: pointer;
+    bottom: 5px;
+    width: 69px;
+}
+
+
+
+#btn_clear {
+    background: url(../img/clear.png);
+    left: 530px;
+}
+
+#btn_undo {
+    background: url(../img/undo.png);
+    left: 603px;
+}
+
+#btn_sameasprev {
+    background: url(../img/redo.png);
+    left: 676px;
+}
+
+#btn_confirm {
+    background: url(../img/confirm.png);
+    left: 749px;
+    width:125px;
+}

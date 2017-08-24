@@ -1,0 +1,95 @@
+﻿
+#pnl_chip {
+    position: absolute;
+    display: block;
+    width: 288px;
+    height: 170px;
+    top: 530px;
+    left: 962px;
+    clip: rect(0,288px, 170px,0);
+}
+
+#btn_arrow_right {
+    background-image: url(../img/arrowright.png);
+    display: block;
+    position: absolute;
+    right: 26px;
+    bottom: 86px;
+    width: 20px;
+    height: 17px;
+    cursor: pointer;
+}
+
+#btn_arrow_left {
+    background-image: url(../img/arrowleft.png);
+    position: absolute;
+    display: block;
+    right: 349px;
+    bottom: 17px;
+    width: 18px;
+    height: 17px;
+    cursor: pointer;
+}
+
+.chip {
+    position: absolute;
+    width: 56px;
+    height: 70px;
+}
+
+#btn_chip_10 {
+    background: url(../img/chip_10.png) no-repeat;
+    left: 0px;
+    bottom: 0px;
+}
+
+    .chip_10_selected, #btn_chip_10:hover {
+        background: url(../img/chip_10_selected.png) no-repeat !important;
+    }
+
+#btn_chip_25 {
+    background: url(../img/chip_25.png) no-repeat;
+    left: 74px;
+    bottom: 9px;
+}
+
+    .chip_25_selected, #btn_chip_25:hover {
+        background: url(../img/chip_25_selected.png) no-repeat !important;
+    }
+
+#btn_chip_100 {
+    background: url(../img/chip_100.png) no-repeat;
+    left: 152px;
+    bottom: 23px;
+}
+
+    .chip_100_selected, #btn_chip_100:hover {
+        background: url(../img/chip_100_selected.png) no-repeat !important;
+    }
+
+#btn_chip_500 {
+    background: url(../img/chip_500.png) no-repeat;
+    left: 230px;
+    bottom: 37px;
+}
+
+    .chip_500_selected, #btn_chip_500:hover {
+        background: url(../img/chip_500_selected.png) no-repeat !important;
+    }
+
+#btn_chip_1000 {
+    background: url(../img/chip_1000.png) no-repeat;
+    left: 304px;
+    bottom: 56px;
+}
+
+    .chip_1000_selected, #btn_chip_1000:hover {
+        background: url(../img/chip_1000_selected.png) no-repeat !important;
+    }
+
+
+
+.chipOnTable {
+    position:absolute;
+    z-index:1;
+}

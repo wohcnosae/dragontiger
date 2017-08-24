@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="GameWS" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="GameWS" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="GameWS">
+      <s:element name="iapiGetOperatorLogoURL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AppUser" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="iapiGetOperatorLogoURLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="iapiGetOperatorLogoURLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_GetUserDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_GetUserDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_GetUserDetailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_CheckSession">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Session" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_CheckSessionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_CheckSessionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getUserSession">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getUserSessionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getUserSessionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getUserIsSuspend">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getUserIsSuspendResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getUserIsSuspendResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getBaccaratUserBetReceiptHtml">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LiveGameID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MachineID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TableID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getBaccaratUserBetReceiptHtmlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getBaccaratUserBetReceiptHtmlResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getBaccaratUserBetHistoryHtml">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DateFrom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DateTo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MachineID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TableID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getBaccaratUserBetHistoryHtmlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getBaccaratUserBetHistoryHtmlResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="iapiGetOperatorLogoURLSoapIn">
+    <wsdl:part name="parameters" element="tns:iapiGetOperatorLogoURL" />
+  </wsdl:message>
+  <wsdl:message name="iapiGetOperatorLogoURLSoapOut">
+    <wsdl:part name="parameters" element="tns:iapiGetOperatorLogoURLResponse" />
+  </wsdl:message>
+  <wsdl:message name="_GetUserDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:_GetUserDetail" />
+  </wsdl:message>
+  <wsdl:message name="_GetUserDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:_GetUserDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="_CheckSessionSoapIn">
+    <wsdl:part name="parameters" element="tns:_CheckSession" />
+  </wsdl:message>
+  <wsdl:message name="_CheckSessionSoapOut">
+    <wsdl:part name="parameters" element="tns:_CheckSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="getUserSessionSoapIn">
+    <wsdl:part name="parameters" element="tns:getUserSession" />
+  </wsdl:message>
+  <wsdl:message name="getUserSessionSoapOut">
+    <wsdl:part name="parameters" element="tns:getUserSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="getUserIsSuspendSoapIn">
+    <wsdl:part name="parameters" element="tns:getUserIsSuspend" />
+  </wsdl:message>
+  <wsdl:message name="getUserIsSuspendSoapOut">
+    <wsdl:part name="parameters" element="tns:getUserIsSuspendResponse" />
+  </wsdl:message>
+  <wsdl:message name="getBaccaratUserBetReceiptHtmlSoapIn">
+    <wsdl:part name="parameters" element="tns:getBaccaratUserBetReceiptHtml" />
+  </wsdl:message>
+  <wsdl:message name="getBaccaratUserBetReceiptHtmlSoapOut">
+    <wsdl:part name="parameters" element="tns:getBaccaratUserBetReceiptHtmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="getBaccaratUserBetHistoryHtmlSoapIn">
+    <wsdl:part name="parameters" element="tns:getBaccaratUserBetHistoryHtml" />
+  </wsdl:message>
+  <wsdl:message name="getBaccaratUserBetHistoryHtmlSoapOut">
+    <wsdl:part name="parameters" element="tns:getBaccaratUserBetHistoryHtmlResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ITUTogelWebServiceSoap">
+    <wsdl:operation name="iapiGetOperatorLogoURL">
+      <wsdl:input message="tns:iapiGetOperatorLogoURLSoapIn" />
+      <wsdl:output message="tns:iapiGetOperatorLogoURLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_GetUserDetail">
+      <wsdl:input message="tns:_GetUserDetailSoapIn" />
+      <wsdl:output message="tns:_GetUserDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_CheckSession">
+      <wsdl:input message="tns:_CheckSessionSoapIn" />
+      <wsdl:output message="tns:_CheckSessionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserSession">
+      <wsdl:input message="tns:getUserSessionSoapIn" />
+      <wsdl:output message="tns:getUserSessionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserIsSuspend">
+      <wsdl:input message="tns:getUserIsSuspendSoapIn" />
+      <wsdl:output message="tns:getUserIsSuspendSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getBaccaratUserBetReceiptHtml">
+      <wsdl:input message="tns:getBaccaratUserBetReceiptHtmlSoapIn" />
+      <wsdl:output message="tns:getBaccaratUserBetReceiptHtmlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getBaccaratUserBetHistoryHtml">
+      <wsdl:input message="tns:getBaccaratUserBetHistoryHtmlSoapIn" />
+      <wsdl:output message="tns:getBaccaratUserBetHistoryHtmlSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ITUTogelWebServiceSoap" type="tns:ITUTogelWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="iapiGetOperatorLogoURL">
+      <soap:operation soapAction="GameWS/iapiGetOperatorLogoURL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_GetUserDetail">
+      <soap:operation soapAction="GameWS/_GetUserDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_CheckSession">
+      <soap:operation soapAction="GameWS/_CheckSession" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserSession">
+      <soap:operation soapAction="GameWS/getUserSession" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserIsSuspend">
+      <soap:operation soapAction="GameWS/getUserIsSuspend" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBaccaratUserBetReceiptHtml">
+      <soap:operation soapAction="GameWS/getBaccaratUserBetReceiptHtml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBaccaratUserBetHistoryHtml">
+      <soap:operation soapAction="GameWS/getBaccaratUserBetHistoryHtml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ITUTogelWebServiceSoap12" type="tns:ITUTogelWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="iapiGetOperatorLogoURL">
+      <soap12:operation soapAction="GameWS/iapiGetOperatorLogoURL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_GetUserDetail">
+      <soap12:operation soapAction="GameWS/_GetUserDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_CheckSession">
+      <soap12:operation soapAction="GameWS/_CheckSession" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserSession">
+      <soap12:operation soapAction="GameWS/getUserSession" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserIsSuspend">
+      <soap12:operation soapAction="GameWS/getUserIsSuspend" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBaccaratUserBetReceiptHtml">
+      <soap12:operation soapAction="GameWS/getBaccaratUserBetReceiptHtml" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBaccaratUserBetHistoryHtml">
+      <soap12:operation soapAction="GameWS/getBaccaratUserBetHistoryHtml" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ITUTogelWebService">
+    <wsdl:port name="ITUTogelWebServiceSoap" binding="tns:ITUTogelWebServiceSoap">
+      <soap:address location="http://gameapi.louisgaming.com/gamewebservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ITUTogelWebServiceSoap12" binding="tns:ITUTogelWebServiceSoap12">
+      <soap12:address location="http://gameapi.louisgaming.com/gamewebservice.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

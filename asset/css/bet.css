@@ -1,0 +1,275 @@
+﻿@keyframes blinking {
+    50% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes blinking {
+    50% {
+        opacity: 0;
+    }
+}
+
+.d_big {
+    position: absolute;
+    border-top-left-radius: 8px;
+    width: 59px;
+    height: 40px;
+    top: 432px;
+    left: 142px;
+    transform: skew(-5deg,10deg) rotateX(32deg);
+    cursor:pointer;
+}
+
+
+.d_small {
+    position: absolute;
+    border-bottom-left-radius: 7px;
+    width: 63px;
+    height: 37px;
+    top: 489px;
+    left: 116px;
+    transform: skew(-1deg,10deg) rotateX(38deg);
+    cursor: pointer;
+}
+
+.d_odd {
+    position: absolute;
+    border-top-right-radius: 6px;
+    width: 59px;
+    height: 39px;
+    top: 443px;
+    left: 204px;
+    transform: skew(1deg,9deg) rotateX(39deg);
+    cursor: pointer;
+}
+
+.d_even {
+    position: absolute;
+    border-bottom-right-radius: 8px;
+    width: 63px;
+    height: 37.9px;
+    top: 499.5px;
+    left: 181px;
+    transform: skew(2deg,9deg) rotateX(42deg);
+    cursor: pointer;
+}
+
+.d_black {
+    position: absolute;
+    border-top-left-radius: 9px;
+    width: 61px;
+    height: 40px;
+    top: 452px;
+    left: 272px;
+    transform: skew(-2deg,7deg) rotateX(35deg);
+    cursor: pointer;
+}
+
+.d_red {
+    position: absolute;
+    border-bottom-left-radius: 8px;
+    width: 64px;
+    height: 37px;
+    top: 510px;
+    left: 253px;
+    transform: skew(1deg,7deg) rotateX(42deg);
+    cursor: pointer;
+}
+
+.d_pikes {
+    position: absolute;
+    width: 60px;
+    height: 39px;
+    top: 460px;
+    left: 335px;
+    transform: skew(0deg,6deg) rotateX(39deg);
+    cursor: pointer;
+}
+
+.d_tiles {
+    position: absolute;
+    width: 63px;
+    height: 38px;
+    top: 517px;
+    left: 319px;
+    transform: skew(0deg,6deg) rotateX(40deg);
+    cursor: pointer;
+}
+
+.d_clovers {
+    position: absolute;
+    border-top-right-radius: 7px;
+    width: 60px;
+    height: 39px;
+    top: 466px;
+    left: 397px;
+    transform: skew(0deg,5deg) rotateX(39deg);
+    cursor: pointer;
+}
+
+.d_hearts {
+    position: absolute;
+    border-bottom-right-radius: 8px;
+    width: 64px;
+    height: 38px;
+    top: 523px;
+    left: 384px;
+    transform: skew(0deg,5deg) rotateX(39deg);
+    cursor: pointer;
+}
+
+.d_dragon {
+    position: absolute;
+    border-radius: 10px;
+    width: 128px;
+    height: 79px;
+    top: 478px;
+    left: 460px;
+    transform: rotateX(39deg) skew(0deg,2deg);
+    cursor: pointer;
+}
+
+.fair_tie {
+    position: absolute;
+    border-radius: 10px;
+    width: 111px;
+    height: 78px;
+    top: 482px;
+    left: 595px;
+    transform: rotateX(39deg);
+    cursor: pointer;
+}
+
+.t_tiger {
+    position: absolute;
+    border-radius: 9px;
+    width: 126px;
+    height: 78px;
+    top: 479px;
+    left: 714px;
+    transform: rotateX(39deg) skew(0deg,-2deg);
+    cursor: pointer;
+}
+
+
+.t_big {
+    position: absolute;
+    border-top-right-radius: 8px;
+    width: 59px;
+    height: 40px;
+    top: 432px;
+    left: 1100px;
+    transform: skew(5deg,-10deg) rotateX(32deg);
+    cursor: pointer;
+}
+
+
+.t_small {
+    position: absolute;
+    border-bottom-right-radius: 7px;
+    width: 63px;
+    height: 37px;
+    top: 489px;
+    left: 1122px;
+    transform: skew(1deg,-10deg) rotateX(38deg);
+    cursor: pointer;
+}
+
+.t_odd {
+    position: absolute;
+    border-top-left-radius: 6px;
+    width: 59px;
+    height: 39px;
+    top: 443px;
+    left: 1038px;
+    transform: skew(-1deg,-9deg) rotateX(39deg);
+    cursor: pointer;
+}
+
+.t_even {
+    position: absolute;
+    border-bottom-left-radius: 8px;
+    width: 63px;
+    height: 37.4px;
+    top: 498.5px;
+    left: 1057.4px;
+    transform: skew(-2deg,-9deg) rotateX(42deg);
+    cursor: pointer;
+}
+
+.t_black {
+    position: absolute;
+    border-top-right-radius: 9px;
+    width: 61px;
+    height: 40px;
+    top: 452px;
+    left: 968px;
+    transform: skew(2deg,-7deg) rotateX(35deg);
+    cursor: pointer;
+}
+
+.t_red {
+    position: absolute;
+    border-bottom-right-radius: 8px;
+    width: 63.4px;
+    height: 37.5px;
+    top: 509.4px;
+    left: 985px;
+    transform: skew(-1deg,-7deg) rotateX(42deg);
+    cursor: pointer;
+}
+
+.t_pikes {
+    position: absolute;
+    width: 60px;
+    height: 39px;
+    top: 460px;
+    left: 906px;
+    transform: skew(0deg,-6deg) rotateX(39deg);
+    cursor: pointer;
+}
+
+.t_tiles {
+    position: absolute;
+    width: 63px;
+    height: 37.4px;
+    top: 517px;
+    left: 919px;
+    transform: skew(0deg,-6deg) rotateX(40deg);
+    cursor: pointer;
+}
+
+.t_clovers {
+    position: absolute;
+    border-top-left-radius: 7px;
+    width: 60px;
+    height: 39px;
+    top: 466px;
+    left: 844px;
+    transform: skew(0deg,-5deg) rotateX(39deg);
+    cursor: pointer;
+}
+
+.t_hearts {
+    position: absolute;
+    border-bottom-left-radius: 8px;
+    width: 63.4px;
+    height: 38px;
+    top: 523px;
+    left: 854px;
+    transform: skew(0deg,-5deg) rotateX(39deg);
+    cursor: pointer;
+}
+
+    .view_bet, .d_big:hover, .d_small:hover, .d_odd:hover, .d_even:hover, .d_black:hover, .d_red:hover, .d_hearts:hover, .d_tiles:hover, .d_clovers:hover, .d_pikes:hover, .d_dragon:hover, .fair_tie:hover,
+    .t_tiger:hover, .t_big:hover, .t_small:hover, .t_odd:hover, .t_even:hover, .t_black:hover, .t_red:hover, .t_hearts:hover, .t_tiles:hover, .t_clovers:hover, .t_pikes:hover, .t_dragon:hover {
+        background: white;
+        opacity: 0.1;
+    }
+
+.view_win {
+    background: darkgreen;
+    opacity: 0.3;
+    animation: blinking 0.7s linear infinite;
+}
